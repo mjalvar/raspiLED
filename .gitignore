@@ -1,0 +1,7 @@
+morpho*
+*.orig
+*.o
+*.sw*
+*.bak
+videos/*
+*.mp4
