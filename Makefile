@@ -67,7 +67,7 @@ OBJS = $(SRCS:.cpp=.o)
 
 ifeq ($(SIM),1)
 	GTKFLAGS = $(shell pkg-config --cflags gtkmm-3.0)
-	GTKFLAGS_LIBS = $(shell pkg-config --libs gtkmm-3.0)
+	GTKFLAGS_LIB = $(shell pkg-config --libs gtkmm-3.0)
 	GLIB_LIB = $(shell pkg-config --libs glib-2.0)
 	LIBS += $(GTKFLAGS_LIB) $(GLIB_LIB)
 	CFLAGS += -DMORPHO_GTK
@@ -92,7 +92,7 @@ all:    depend $(MAIN)
 
 
 $(MAIN): $(OBJS)
-		$(CC) $(CFLAGS) $(CVFLAGS) $(GTKFLAGS) $(INCLUDES) -o $(MAIN) $(OBJS) $(LFLAGS) $(LIBS) $(BCMFLAGS)
+		$(CC) $(CFLAGS) $(CVFLAGS) $(GTKFLAGS) $(INCLUDES) -o $(MAIN) $(OBJS) $(LFLAGS) $(BCMFLAGS) $(LIBS)
 
 # this is a suffix replacement rule for building .o's from .c's
 # it uses automatic variables $<: the name of the prerequisite of
