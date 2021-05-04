@@ -5,3 +5,4 @@ morpho*
 *.bak
 videos/*
 *.mp4
+.vscode

@@ -7,11 +7,14 @@
 # 'make clean'  removes all .o and executable files
 #
 
-SIM ?= 0
+SIM ?= 1
 DEBUG ?= 0
 ARCH = $(shell uname -m)
-ROOT = /home/mjalvar/Projects/LED/source
-CVFLAGS = `pkg-config --cflags opencv` `pkg-config --libs opencv`
+ROOT = $(PWD)
+CVFLAGS = $(shell pkg-config --cflags opencv4)
+CVFLAGS_LIB = $(shell pkg-config --libs opencv4)
+
+LIBS = $(CVFLAGS_LIB)
 
 # define the C compiler to use
 CC = g++
@@ -27,6 +30,7 @@ ifneq ($(ARCH),x86_64)
     ROOT = /home/pi/morpho
 endif
 
+export LD_LIBRARY_PATH = /usr/include/x86_64-linux-gnu:/usr/include/x86_64-linux-gnu/9:/usr/lib/gcc/x86_64-linux-gnu/9/include:/usr/include/c++/9:/usr/include/x86_64-linux-gnu/c++/9/:/usr/include/glibmm-2.4:/usr/lib/x86_64-linux-gnu/glibmm-2.4/include
 
 # define any directories containing header files other than /usr/include
 #
@@ -38,7 +42,7 @@ INCLUDES = -I$(ROOT)/VirtualDisplay -I$(ROOT)/MorphoEffect -I$(ROOT)/MorphoColor
 # LFLAGS = -L/home/newhall/lib  -L../lib
 
 # define any libraries to link into executable:
-#   if I want to link in libraries (libx.so or libx.a) I use the -llibname 
+#   if I want to link in libraries (libx.so or libx.a) I use the -llibname
 #   option, something like (this will link in libmylib.so and libm.so:
 # LIBS = -lmylib -lm
 
@@ -62,7 +66,10 @@ OBJS = $(SRCS:.cpp=.o)
 
 
 ifeq ($(SIM),1)
-	GTKFLAGS = `pkg-config --cflags gtkmm-3.0` `pkg-config --libs gtkmm-3.0`
+	GTKFLAGS = $(shell pkg-config --cflags gtkmm-3.0)
+	GTKFLAGS_LIBS = $(shell pkg-config --libs gtkmm-3.0)
+	GLIB_LIB = $(shell pkg-config --libs glib-2.0)
+	LIBS += $(GTKFLAGS_LIB) $(GLIB_LIB)
 	CFLAGS += -DMORPHO_GTK
 	SRCS += GtkDisplay/GtkDisplay.cpp MorphoWindow/MorphoWindow.cpp
 	MAIN = morpho_sim
@@ -79,29 +86,30 @@ endif
 # deleting dependencies appended to the file from 'make depend'
 #
 
-.PHONY: depend clean 
+.PHONY: depend clean
 
 all:    depend $(MAIN)
 
 
-$(MAIN): $(OBJS) 
+$(MAIN): $(OBJS)
 		$(CC) $(CFLAGS) $(CVFLAGS) $(GTKFLAGS) $(INCLUDES) -o $(MAIN) $(OBJS) $(LFLAGS) $(LIBS) $(BCMFLAGS)
 
 # this is a suffix replacement rule for building .o's from .c's
 # it uses automatic variables $<: the name of the prerequisite of
-# the rule(a .c file) and $@: the name of the target of the rule (a .o file) 
+# the rule(a .c file) and $@: the name of the target of the rule (a .o file)
 # (see the gnu make manual section about automatic variables)
-.cpp.o: 
+.cpp.o:
 		@echo compiling $<
 		$(CC) $(CFLAGS) $(CVFLAGS) $(GTKFLAGS) $(INCLUDES) -c $< $(BCMFLAGS) -o $@
-# $(OBJS): 
+# $(OBJS):
 # 		@echo compiling $<
-# 		$(CC) $(CFLAGS) $(CVFLAGS) $(GTKFLAGS) $(INCLUDES) -c $<  -o $@		
+# 		$(CC) $(CFLAGS) $(CVFLAGS) $(GTKFLAGS) $(INCLUDES) -c $<  -o $@
 
 clean:
 		rm -f $(ROOT)/*.o $(ROOT)/*/*.o $(MAIN)*
 
 depend: $(SRCS)
+		@echo $(LD_LIBRARY_PATH)
 		makedepend $(INCLUDES) $^ -f makedepend.$(MAIN)
 #		makedepend $(INCLUDES) $^
 

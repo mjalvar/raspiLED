@@ -4,6 +4,9 @@
 
 #include <stdio.h>
 #include <string>
+
+#include <random>
+
 #include "opencv2/opencv.hpp"
 #include "VirtualDisplay.hpp"
 #ifdef MORPHO_GTK

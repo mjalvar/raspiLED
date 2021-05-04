@@ -4,130 +4,107 @@ MorphoColor/MorphoColor.o: MorphoColor/MorphoColor.hpp
 MorphoColor/MorphoColor.o: /usr/include/inttypes.h /usr/include/features.h
 MorphoColor/MorphoColor.o: /usr/include/stdc-predef.h /usr/include/stdint.h
 MorphoWorker/MorphoWorker.o: MorphoWorker/MorphoWorker.hpp
-MorphoWorker/MorphoWorker.o: /home/mjalvar/Projects/LED/source/LedDisplay/LedDisplay.hpp
-MorphoWorker/MorphoWorker.o: /usr/include/stdio.h /usr/include/features.h
-MorphoWorker/MorphoWorker.o: /usr/include/stdc-predef.h /usr/include/libio.h
-MorphoWorker/MorphoWorker.o: /usr/include/_G_config.h /usr/include/wchar.h
-MorphoWorker/MorphoWorker.o: /usr/include/math.h /usr/include/time.h
-MorphoWorker/MorphoWorker.o: /usr/include/xlocale.h /usr/include/unistd.h
-MorphoWorker/MorphoWorker.o: /usr/include/getopt.h Constants.hpp
-MorphoWorker/MorphoWorker.o: MorphoColor/MorphoColor.hpp
+MorphoWorker/MorphoWorker.o: /home/mjalvar/Projects/raspiLED/LedDisplay/LedDisplay.hpp
+MorphoWorker/MorphoWorker.o: /usr/include/stdio.h /usr/include/math.h
+MorphoWorker/MorphoWorker.o: /usr/include/time.h /usr/include/features.h
+MorphoWorker/MorphoWorker.o: /usr/include/stdc-predef.h /usr/include/unistd.h
+MorphoWorker/MorphoWorker.o: Constants.hpp MorphoColor/MorphoColor.hpp
 MorphoWorker/MorphoWorker.o: /usr/include/inttypes.h /usr/include/stdint.h
-MorphoWorker/MorphoWorker.o: /home/mjalvar/Projects/LED/source/VirtualDisplay/VirtualDisplay.hpp
-MorphoWorker/MorphoWorker.o: /home/mjalvar/Projects/LED/source/MorphoEffect/PowerEffect.hpp
-MorphoWorker/MorphoWorker.o: /home/mjalvar/Projects/LED/source/MorphoEffect/MorphoEffect.hpp
-MorphoWorker/MorphoWorker.o: /home/mjalvar/Projects/LED/source/MorphoEffect/FadeInOutEffect.hpp
-MorphoWorker/MorphoWorker.o: /home/mjalvar/Projects/LED/source/MorphoEffect/LineEffect.hpp
-MorphoWorker/MorphoWorker.o: /home/mjalvar/Projects/LED/source/MorphoEffect/ColorEffect.hpp
-VirtualDisplay/VirtualDisplay.o: /home/mjalvar/Projects/LED/source/VirtualDisplay/VirtualDisplay.hpp
-VirtualDisplay/VirtualDisplay.o: /usr/include/stdio.h /usr/include/features.h
-VirtualDisplay/VirtualDisplay.o: /usr/include/stdc-predef.h
-VirtualDisplay/VirtualDisplay.o: /usr/include/libio.h
-VirtualDisplay/VirtualDisplay.o: /usr/include/_G_config.h
-VirtualDisplay/VirtualDisplay.o: /usr/include/wchar.h Constants.hpp
+MorphoWorker/MorphoWorker.o: /home/mjalvar/Projects/raspiLED/VirtualDisplay/VirtualDisplay.hpp
+MorphoWorker/MorphoWorker.o: /home/mjalvar/Projects/raspiLED/MorphoEffect/PowerEffect.hpp
+MorphoWorker/MorphoWorker.o: /home/mjalvar/Projects/raspiLED/MorphoEffect/MorphoEffect.hpp
+MorphoWorker/MorphoWorker.o: /home/mjalvar/Projects/raspiLED/MorphoEffect/FadeInOutEffect.hpp
+MorphoWorker/MorphoWorker.o: /home/mjalvar/Projects/raspiLED/MorphoEffect/LineEffect.hpp
+MorphoWorker/MorphoWorker.o: /home/mjalvar/Projects/raspiLED/MorphoEffect/ColorEffect.hpp
+VirtualDisplay/VirtualDisplay.o: /home/mjalvar/Projects/raspiLED/VirtualDisplay/VirtualDisplay.hpp
+VirtualDisplay/VirtualDisplay.o: /usr/include/stdio.h Constants.hpp
 VirtualDisplay/VirtualDisplay.o: MorphoColor/MorphoColor.hpp
 VirtualDisplay/VirtualDisplay.o: /usr/include/inttypes.h
+VirtualDisplay/VirtualDisplay.o: /usr/include/features.h
+VirtualDisplay/VirtualDisplay.o: /usr/include/stdc-predef.h
 VirtualDisplay/VirtualDisplay.o: /usr/include/stdint.h
-MorphoEffect/MorphoEffect.o: /home/mjalvar/Projects/LED/source/MorphoEffect/MorphoEffect.hpp
-MorphoEffect/MorphoEffect.o: /usr/include/stdio.h /usr/include/features.h
-MorphoEffect/MorphoEffect.o: /usr/include/stdc-predef.h /usr/include/libio.h
-MorphoEffect/MorphoEffect.o: /usr/include/_G_config.h /usr/include/wchar.h
-MorphoEffect/MorphoEffect.o: /home/mjalvar/Projects/LED/source/VirtualDisplay/VirtualDisplay.hpp
+MorphoEffect/MorphoEffect.o: /home/mjalvar/Projects/raspiLED/MorphoEffect/MorphoEffect.hpp
+MorphoEffect/MorphoEffect.o: /usr/include/stdio.h
+MorphoEffect/MorphoEffect.o: /home/mjalvar/Projects/raspiLED/VirtualDisplay/VirtualDisplay.hpp
 MorphoEffect/MorphoEffect.o: Constants.hpp MorphoColor/MorphoColor.hpp
-MorphoEffect/MorphoEffect.o: /usr/include/inttypes.h /usr/include/stdint.h
-MorphoEffect/MorphoEffect.o: /home/mjalvar/Projects/LED/source/LedDisplay/LedDisplay.hpp
+MorphoEffect/MorphoEffect.o: /usr/include/inttypes.h /usr/include/features.h
+MorphoEffect/MorphoEffect.o: /usr/include/stdc-predef.h /usr/include/stdint.h
+MorphoEffect/MorphoEffect.o: /home/mjalvar/Projects/raspiLED/LedDisplay/LedDisplay.hpp
 MorphoEffect/MorphoEffect.o: /usr/include/math.h /usr/include/time.h
-MorphoEffect/MorphoEffect.o: /usr/include/xlocale.h /usr/include/unistd.h
-MorphoEffect/MorphoEffect.o: /usr/include/getopt.h
-MorphoEffect/LineEffect.o: /home/mjalvar/Projects/LED/source/MorphoEffect/LineEffect.hpp
-MorphoEffect/LineEffect.o: /home/mjalvar/Projects/LED/source/MorphoEffect/MorphoEffect.hpp
-MorphoEffect/LineEffect.o: /usr/include/stdio.h /usr/include/features.h
-MorphoEffect/LineEffect.o: /usr/include/stdc-predef.h /usr/include/libio.h
-MorphoEffect/LineEffect.o: /usr/include/_G_config.h /usr/include/wchar.h
-MorphoEffect/LineEffect.o: /home/mjalvar/Projects/LED/source/VirtualDisplay/VirtualDisplay.hpp
+MorphoEffect/MorphoEffect.o: /usr/include/unistd.h
+MorphoEffect/LineEffect.o: /home/mjalvar/Projects/raspiLED/MorphoEffect/LineEffect.hpp
+MorphoEffect/LineEffect.o: /home/mjalvar/Projects/raspiLED/MorphoEffect/MorphoEffect.hpp
+MorphoEffect/LineEffect.o: /usr/include/stdio.h
+MorphoEffect/LineEffect.o: /home/mjalvar/Projects/raspiLED/VirtualDisplay/VirtualDisplay.hpp
 MorphoEffect/LineEffect.o: Constants.hpp MorphoColor/MorphoColor.hpp
-MorphoEffect/LineEffect.o: /usr/include/inttypes.h /usr/include/stdint.h
-MorphoEffect/LineEffect.o: /home/mjalvar/Projects/LED/source/LedDisplay/LedDisplay.hpp
+MorphoEffect/LineEffect.o: /usr/include/inttypes.h /usr/include/features.h
+MorphoEffect/LineEffect.o: /usr/include/stdc-predef.h /usr/include/stdint.h
+MorphoEffect/LineEffect.o: /home/mjalvar/Projects/raspiLED/LedDisplay/LedDisplay.hpp
 MorphoEffect/LineEffect.o: /usr/include/math.h /usr/include/time.h
-MorphoEffect/LineEffect.o: /usr/include/xlocale.h /usr/include/unistd.h
-MorphoEffect/LineEffect.o: /usr/include/getopt.h
-MorphoEffect/ColorEffect.o: /home/mjalvar/Projects/LED/source/MorphoEffect/ColorEffect.hpp
-MorphoEffect/ColorEffect.o: /home/mjalvar/Projects/LED/source/MorphoEffect/MorphoEffect.hpp
-MorphoEffect/ColorEffect.o: /usr/include/stdio.h /usr/include/features.h
-MorphoEffect/ColorEffect.o: /usr/include/stdc-predef.h /usr/include/libio.h
-MorphoEffect/ColorEffect.o: /usr/include/_G_config.h /usr/include/wchar.h
-MorphoEffect/ColorEffect.o: /home/mjalvar/Projects/LED/source/VirtualDisplay/VirtualDisplay.hpp
+MorphoEffect/LineEffect.o: /usr/include/unistd.h
+MorphoEffect/ColorEffect.o: /home/mjalvar/Projects/raspiLED/MorphoEffect/ColorEffect.hpp
+MorphoEffect/ColorEffect.o: /home/mjalvar/Projects/raspiLED/MorphoEffect/MorphoEffect.hpp
+MorphoEffect/ColorEffect.o: /usr/include/stdio.h
+MorphoEffect/ColorEffect.o: /home/mjalvar/Projects/raspiLED/VirtualDisplay/VirtualDisplay.hpp
 MorphoEffect/ColorEffect.o: Constants.hpp MorphoColor/MorphoColor.hpp
-MorphoEffect/ColorEffect.o: /usr/include/inttypes.h /usr/include/stdint.h
-MorphoEffect/ColorEffect.o: /home/mjalvar/Projects/LED/source/LedDisplay/LedDisplay.hpp
+MorphoEffect/ColorEffect.o: /usr/include/inttypes.h /usr/include/features.h
+MorphoEffect/ColorEffect.o: /usr/include/stdc-predef.h /usr/include/stdint.h
+MorphoEffect/ColorEffect.o: /home/mjalvar/Projects/raspiLED/LedDisplay/LedDisplay.hpp
 MorphoEffect/ColorEffect.o: /usr/include/math.h /usr/include/time.h
-MorphoEffect/ColorEffect.o: /usr/include/xlocale.h /usr/include/unistd.h
-MorphoEffect/ColorEffect.o: /usr/include/getopt.h
-MorphoEffect/FadeInOutEffect.o: /home/mjalvar/Projects/LED/source/MorphoEffect/FadeInOutEffect.hpp
-MorphoEffect/FadeInOutEffect.o: /home/mjalvar/Projects/LED/source/MorphoEffect/MorphoEffect.hpp
-MorphoEffect/FadeInOutEffect.o: /usr/include/stdio.h /usr/include/features.h
-MorphoEffect/FadeInOutEffect.o: /usr/include/stdc-predef.h
-MorphoEffect/FadeInOutEffect.o: /usr/include/libio.h /usr/include/_G_config.h
-MorphoEffect/FadeInOutEffect.o: /usr/include/wchar.h
-MorphoEffect/FadeInOutEffect.o: /home/mjalvar/Projects/LED/source/VirtualDisplay/VirtualDisplay.hpp
+MorphoEffect/ColorEffect.o: /usr/include/unistd.h
+MorphoEffect/FadeInOutEffect.o: /home/mjalvar/Projects/raspiLED/MorphoEffect/FadeInOutEffect.hpp
+MorphoEffect/FadeInOutEffect.o: /home/mjalvar/Projects/raspiLED/MorphoEffect/MorphoEffect.hpp
+MorphoEffect/FadeInOutEffect.o: /usr/include/stdio.h
+MorphoEffect/FadeInOutEffect.o: /home/mjalvar/Projects/raspiLED/VirtualDisplay/VirtualDisplay.hpp
 MorphoEffect/FadeInOutEffect.o: Constants.hpp MorphoColor/MorphoColor.hpp
-MorphoEffect/FadeInOutEffect.o: /usr/include/inttypes.h /usr/include/stdint.h
-MorphoEffect/FadeInOutEffect.o: /home/mjalvar/Projects/LED/source/LedDisplay/LedDisplay.hpp
+MorphoEffect/FadeInOutEffect.o: /usr/include/inttypes.h
+MorphoEffect/FadeInOutEffect.o: /usr/include/features.h
+MorphoEffect/FadeInOutEffect.o: /usr/include/stdc-predef.h
+MorphoEffect/FadeInOutEffect.o: /usr/include/stdint.h
+MorphoEffect/FadeInOutEffect.o: /home/mjalvar/Projects/raspiLED/LedDisplay/LedDisplay.hpp
 MorphoEffect/FadeInOutEffect.o: /usr/include/math.h /usr/include/time.h
-MorphoEffect/FadeInOutEffect.o: /usr/include/xlocale.h /usr/include/unistd.h
-MorphoEffect/FadeInOutEffect.o: /usr/include/getopt.h
-LedDisplay/LedDisplay.o: /home/mjalvar/Projects/LED/source/LedDisplay/LedDisplay.hpp
-LedDisplay/LedDisplay.o: /usr/include/stdio.h /usr/include/features.h
-LedDisplay/LedDisplay.o: /usr/include/stdc-predef.h /usr/include/libio.h
-LedDisplay/LedDisplay.o: /usr/include/_G_config.h /usr/include/wchar.h
-LedDisplay/LedDisplay.o: /usr/include/math.h /usr/include/time.h
-LedDisplay/LedDisplay.o: /usr/include/xlocale.h /usr/include/unistd.h
-LedDisplay/LedDisplay.o: /usr/include/getopt.h Constants.hpp
-LedDisplay/LedDisplay.o: MorphoColor/MorphoColor.hpp /usr/include/inttypes.h
-LedDisplay/LedDisplay.o: /usr/include/stdint.h
-LedDisplay/LedDisplay.o: /home/mjalvar/Projects/LED/source/VirtualDisplay/VirtualDisplay.hpp
+MorphoEffect/FadeInOutEffect.o: /usr/include/unistd.h
+LedDisplay/LedDisplay.o: /home/mjalvar/Projects/raspiLED/LedDisplay/LedDisplay.hpp
+LedDisplay/LedDisplay.o: /usr/include/stdio.h /usr/include/math.h
+LedDisplay/LedDisplay.o: /usr/include/time.h /usr/include/features.h
+LedDisplay/LedDisplay.o: /usr/include/stdc-predef.h /usr/include/unistd.h
+LedDisplay/LedDisplay.o: Constants.hpp MorphoColor/MorphoColor.hpp
+LedDisplay/LedDisplay.o: /usr/include/inttypes.h /usr/include/stdint.h
+LedDisplay/LedDisplay.o: /home/mjalvar/Projects/raspiLED/VirtualDisplay/VirtualDisplay.hpp
 CmdParser/CmdParser.o: CmdParser/CmdParser.hpp /usr/include/unistd.h
 CmdParser/CmdParser.o: /usr/include/features.h /usr/include/stdc-predef.h
-CmdParser/CmdParser.o: /usr/include/getopt.h /usr/include/stdio.h
-CmdParser/CmdParser.o: /usr/include/libio.h /usr/include/_G_config.h
-CmdParser/CmdParser.o: /usr/include/wchar.h
+CmdParser/CmdParser.o: /usr/include/stdio.h
 main.o: Constants.hpp MorphoWorker/MorphoWorker.hpp
-main.o: /home/mjalvar/Projects/LED/source/LedDisplay/LedDisplay.hpp
-main.o: /usr/include/stdio.h /usr/include/features.h
-main.o: /usr/include/stdc-predef.h /usr/include/libio.h
-main.o: /usr/include/_G_config.h /usr/include/wchar.h /usr/include/math.h
-main.o: /usr/include/time.h /usr/include/xlocale.h /usr/include/unistd.h
-main.o: /usr/include/getopt.h MorphoColor/MorphoColor.hpp
+main.o: /home/mjalvar/Projects/raspiLED/LedDisplay/LedDisplay.hpp
+main.o: /usr/include/stdio.h /usr/include/math.h /usr/include/time.h
+main.o: /usr/include/features.h /usr/include/stdc-predef.h
+main.o: /usr/include/unistd.h MorphoColor/MorphoColor.hpp
 main.o: /usr/include/inttypes.h /usr/include/stdint.h
-main.o: /home/mjalvar/Projects/LED/source/VirtualDisplay/VirtualDisplay.hpp
-main.o: /home/mjalvar/Projects/LED/source/MorphoEffect/PowerEffect.hpp
-main.o: /home/mjalvar/Projects/LED/source/MorphoEffect/MorphoEffect.hpp
-main.o: /home/mjalvar/Projects/LED/source/MorphoEffect/FadeInOutEffect.hpp
-main.o: /home/mjalvar/Projects/LED/source/MorphoEffect/LineEffect.hpp
-main.o: /home/mjalvar/Projects/LED/source/MorphoEffect/ColorEffect.hpp
+main.o: /home/mjalvar/Projects/raspiLED/VirtualDisplay/VirtualDisplay.hpp
+main.o: /home/mjalvar/Projects/raspiLED/MorphoEffect/PowerEffect.hpp
+main.o: /home/mjalvar/Projects/raspiLED/MorphoEffect/MorphoEffect.hpp
+main.o: /home/mjalvar/Projects/raspiLED/MorphoEffect/FadeInOutEffect.hpp
+main.o: /home/mjalvar/Projects/raspiLED/MorphoEffect/LineEffect.hpp
+main.o: /home/mjalvar/Projects/raspiLED/MorphoEffect/ColorEffect.hpp
 main.o: CmdParser/CmdParser.hpp
 GtkDisplay/GtkDisplay.o: GtkDisplay/GtkDisplay.hpp Constants.hpp
 GtkDisplay/GtkDisplay.o: MorphoColor/MorphoColor.hpp /usr/include/inttypes.h
 GtkDisplay/GtkDisplay.o: /usr/include/features.h /usr/include/stdc-predef.h
 GtkDisplay/GtkDisplay.o: /usr/include/stdint.h
-GtkDisplay/GtkDisplay.o: /home/mjalvar/Projects/LED/source/VirtualDisplay/VirtualDisplay.hpp
-GtkDisplay/GtkDisplay.o: /usr/include/stdio.h /usr/include/libio.h
-GtkDisplay/GtkDisplay.o: /usr/include/_G_config.h /usr/include/wchar.h
+GtkDisplay/GtkDisplay.o: /home/mjalvar/Projects/raspiLED/VirtualDisplay/VirtualDisplay.hpp
+GtkDisplay/GtkDisplay.o: /usr/include/stdio.h
 MorphoWindow/MorphoWindow.o: MorphoWindow/MorphoWindow.hpp
 MorphoWindow/MorphoWindow.o: MorphoWorker/MorphoWorker.hpp
-MorphoWindow/MorphoWindow.o: /home/mjalvar/Projects/LED/source/LedDisplay/LedDisplay.hpp
-MorphoWindow/MorphoWindow.o: /usr/include/stdio.h /usr/include/features.h
-MorphoWindow/MorphoWindow.o: /usr/include/stdc-predef.h /usr/include/libio.h
-MorphoWindow/MorphoWindow.o: /usr/include/_G_config.h /usr/include/wchar.h
-MorphoWindow/MorphoWindow.o: /usr/include/math.h /usr/include/time.h
-MorphoWindow/MorphoWindow.o: /usr/include/xlocale.h /usr/include/unistd.h
-MorphoWindow/MorphoWindow.o: /usr/include/getopt.h Constants.hpp
-MorphoWindow/MorphoWindow.o: MorphoColor/MorphoColor.hpp
+MorphoWindow/MorphoWindow.o: /home/mjalvar/Projects/raspiLED/LedDisplay/LedDisplay.hpp
+MorphoWindow/MorphoWindow.o: /usr/include/stdio.h /usr/include/math.h
+MorphoWindow/MorphoWindow.o: /usr/include/time.h /usr/include/features.h
+MorphoWindow/MorphoWindow.o: /usr/include/stdc-predef.h /usr/include/unistd.h
+MorphoWindow/MorphoWindow.o: Constants.hpp MorphoColor/MorphoColor.hpp
 MorphoWindow/MorphoWindow.o: /usr/include/inttypes.h /usr/include/stdint.h
-MorphoWindow/MorphoWindow.o: /home/mjalvar/Projects/LED/source/VirtualDisplay/VirtualDisplay.hpp
-MorphoWindow/MorphoWindow.o: /home/mjalvar/Projects/LED/source/MorphoEffect/PowerEffect.hpp
-MorphoWindow/MorphoWindow.o: /home/mjalvar/Projects/LED/source/MorphoEffect/MorphoEffect.hpp
-MorphoWindow/MorphoWindow.o: /home/mjalvar/Projects/LED/source/MorphoEffect/FadeInOutEffect.hpp
-MorphoWindow/MorphoWindow.o: /home/mjalvar/Projects/LED/source/MorphoEffect/LineEffect.hpp
-MorphoWindow/MorphoWindow.o: /home/mjalvar/Projects/LED/source/MorphoEffect/ColorEffect.hpp
+MorphoWindow/MorphoWindow.o: /home/mjalvar/Projects/raspiLED/VirtualDisplay/VirtualDisplay.hpp
+MorphoWindow/MorphoWindow.o: /home/mjalvar/Projects/raspiLED/MorphoEffect/PowerEffect.hpp
+MorphoWindow/MorphoWindow.o: /home/mjalvar/Projects/raspiLED/MorphoEffect/MorphoEffect.hpp
+MorphoWindow/MorphoWindow.o: /home/mjalvar/Projects/raspiLED/MorphoEffect/FadeInOutEffect.hpp
+MorphoWindow/MorphoWindow.o: /home/mjalvar/Projects/raspiLED/MorphoEffect/LineEffect.hpp
+MorphoWindow/MorphoWindow.o: /home/mjalvar/Projects/raspiLED/MorphoEffect/ColorEffect.hpp
 MorphoWindow/MorphoWindow.o: GtkDisplay/GtkDisplay.hpp
